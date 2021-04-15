@@ -9,18 +9,10 @@
     width: 1200px;
     margin: 0 auto;
 }
-.container_header{
+
+.container_header {
     justify-content: flex-start;
     align-items: center;
-}
-
-.btn_menu{
-    display: inline-block;
-
-}
-.btn_menu i{
-    color: white;
-    font-size: 30px;
 }
 
 header {
@@ -36,7 +28,6 @@ header {
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    
 }
 
 .nav_header {
@@ -53,6 +44,10 @@ header {
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
+}
+
+.btn_menu {
+    display: none;
 }
 
 main {
@@ -252,16 +247,29 @@ footer span {
     .container {
         width: 80vw;
     }
-
-    .nav_header{
-        height:300px ;
+    .btn_menu {
+        display: inline-block;
+    }
+    .btn_menu i {
+        color: white;
+        font-size: 30px;
+    }
+    .container_header {
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        align-items: center;
+    }
+    .nav_header {
+        height: 300px;
         width: 100%;
-        top:60px;
+        top: 60px;
         left: 0;
-        position:absolute;
-        display: none;
+        position: absolute;
         flex-direction: column;
         justify-content: space-evenly;
+        background-color: #010010;
+        display: none;
     }
     .container_banner {
         display: flex;
@@ -324,42 +332,32 @@ footer span {
         width: auto;
         text-align: justify;
     }
-
-    .container_info{
+    .container_info {
         flex-direction: column;
-        height:600px;
+        height: 600px;
     }
-
-    .endereco{
+    .endereco {
         height: 800px;
         justify-content: space-evenly;
     }
-    .box_endereco{
+    .box_endereco {
         width: 80vw;
         height: unset;
         padding: 60px 40px;
     }
-
-    .endereco h2{
+    .endereco h2 {
         width: auto;
     }
-
-    .endereco p{
+    .endereco p {
         margin-left: 0;
     }
-
-    .img_mapa{
-        position:unset;
+    .img_mapa {
+        position: unset;
         width: 80vw;
         margin-bottom: 45px;
     }
-
-    footer span{
+    footer span {
         width: 80vw;
         text-align: center;
-    }
-
-    .btn_menu{
-        
     }
 }

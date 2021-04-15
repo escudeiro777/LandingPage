@@ -13,13 +13,13 @@
 <body>
     <header>
         <div class="container container_header">
-            <nav id="links" class="nav_header">
-                <a href="#início">Início</a>
-                <a href="#container_sobre">Sobre</a>
-                <a href="#desafio">Desafios</a>
-                <a href="#endereco">Endereço </a>
+            <nav id="Links" class="nav_header">
+                <a href="#início" onclick="botaoDoMenu()">Início</a>
+                <a href="#container_sobre" onclick="botaoDoMenu()">Sobre</a>
+                <a href="#desafio" onclick="botaoDoMenu()">Desafios</a>
+                <a href="#endereco" onclick="botaoDoMenu()">Endereço </a>
             </nav>
-            <a class="btn_menu" href="#" onclick="BotaoDoMenu">
+            <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
                 <i class="fas fa-bars"> </i>
             </a>
         </div>
@@ -94,15 +94,16 @@
     </footer>
 
     <script>
-        function BotaoDoMenu(){
-            var menu = document.getElementById("links");
-            if (menu.style.display === "flex") {
-                //esconder o menu
-                menu.style.display ==="none";
-            } else {
-                //mostrar o menu
-                menu.style.display === "flex";
-                menu.style.color
+        function botaoDoMenu() {
+            var menu = document.getElementById("Links");
+
+            if (screen.width <= 420) {
+
+                if (menu.style.display === "flex") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "flex";
+                }
             }
         }
     </script>
